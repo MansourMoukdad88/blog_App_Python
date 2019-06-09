@@ -1,0 +1,15 @@
+//========== create virtual env ===========
+$ cd my-project/
+$ virtualenv blog
+$ cd blog/      //optional// $ virtualenv blog --system-site-packages
+$ source bin/activate   //or//source blog/bin/activate
+$ pip freeze // to check which packages were installed
+
+//========== create Django project ============
+$ cd blog/
+$ mkdir src
+$ cd src/
+$ $ django-admin startproject blog .
+$ python manage.py runserver
+
+// $ pip freeze > req.txt  //show all packages with versions
